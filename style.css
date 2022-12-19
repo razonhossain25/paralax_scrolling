@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type:none ;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+   
+}
+h1,h2,h3,p{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+.logo a{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#0469a3;
+}
+.manu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.manu ul li{
+    padding: 10px 15px;
+    font-size: 18px;
+    color:rgb(4, 105, 163);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.manu ul li:hover,.manu .activ{
+    background: #0469a3;
+    color:#ffffff;
+}
+#hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top,#63cf79,red);
+    transition: 1.4s;
+}
+#hero img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    /* transform-origin: top; */
+}
+#hero h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #0469a3;
+}
+.about{
+    position: relative;
+    padding: 40px 100px;
+    background: #0469a3;
+}
+.about h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.about p{
+    font-size: 18px;
+    line-height: 25px;
+}
